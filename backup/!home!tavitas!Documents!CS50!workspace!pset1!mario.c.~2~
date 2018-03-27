@@ -1,0 +1,15 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void) {
+  printf("Height: ");
+  int height = get_int();
+
+  /* int counter; */
+
+  while (height > 0) {
+    printf("#");
+    height--;
+  } 
+}
+

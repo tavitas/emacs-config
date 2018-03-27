@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int main (void) {
+    float quarter = 0.25;
+    float dime = 0.10;
+    float nickel = 0.05;
+    float penny = 0.01;
+    float change;
+    printf("O hai! How much change is owed?\n");
+    
+    do {
+    change = get_float();
+    } while (change < 0);
+    
+    int coins = 0;
+    while (change - quarter >= 0) {
+        coins++;
+        change = change - quarter;
+        // printf("Change left: %.2f, Num of coins: %i\n", change, coins);
+        // if (change == 0) {
+        //     printf("%i\n",coins);
+        // }
+    } 
+    
+    while (change - dime >= 0) {
+        coins++;
+        change = change - dime;
+        // printf("Change left: %.2f, Num of coins: %i\n", change, coins);
+        if (change == 0) {
+            printf("%i\n",coins);
+        }
+    } 
+    
+    while (change - nickel >= 0) {
+        coins++;
+        change = change - nickel;
+        // printf("Change left: %.2f, Num of coins: %i\n", change, coins);
+        if (change == 0) {
+            printf("%i\n",coins);
+        }
+    } 
+    
+    while (change - penny >= 0) {
+        coins++;
+        change = change - penny;
+        // printf("Change left: %.2f, Num of coins: %i\n", change, coins);
+        if (change == 0) {
+            printf("%i\n",coins);
+        }
+    }
+}
+

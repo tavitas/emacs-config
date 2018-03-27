@@ -1,0 +1,5 @@
+clean:
+	rm -f water hello
+all:
+	gcc -Wall -g hello.c -l cs50 -o hello
+	gcc -Wall -g water.c -l cs50 -o water

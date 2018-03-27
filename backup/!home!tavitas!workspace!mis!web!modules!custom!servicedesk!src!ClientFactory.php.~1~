@@ -1,0 +1,7 @@
+namespace Drupal\servicedesk;
+
+use GuzzleHttp\Client;
+
+class ClientFactory {
+	
+}

@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void) {
+  printf("bool is %lu\n", sizeof(bool));
+  printf("int is %lu\n", sizeof(int));
+  /* printf("bool is %f\n", sizeof(bool)); */
+  /* printf("bool is %f\n", sizeof(bool)); */
+  /* printf("bool is %f\n", sizeof(bool)); */
+}

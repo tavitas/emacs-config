@@ -1,0 +1,7 @@
+<?php
+
+namespace Drupal\dino_roar\Controller;
+
+class RoarController {
+    
+}

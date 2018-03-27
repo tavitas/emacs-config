@@ -1,0 +1,4 @@
+services:
+  dino_roar.client:
+    class: '\Drupal\dino_roar\Client\MyClient'
+    arguments: ['@http_client', '@key.repository', '@config.factory']

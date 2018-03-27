@@ -1,0 +1,17 @@
+namespace Drupal\servicedesk;
+
+use GuzzleHttp\Client;
+
+/*
+ * This is a wrapper for the ServiceDesk REST webservice
+*/
+
+class RestService {
+    private $client;
+    private $service_config;
+
+  public function __construct(
+    $this->client = $client;
+    $this->servic
+  )
+}

@@ -1,0 +1,3 @@
+all:
+	rm -f ints
+	gcc -l cs50 ints.c -o ints

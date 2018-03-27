@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void) {
+	printf("Enter x value: ");
+	int x = get_int();
+	/* printf("x is: %i\n", x); */
+
+	printf("Enter y value: ");
+	int y = get_int();
+	/* printf("y is: %i\n", y); */
+
+	int z = x + y;
+	printf("Sum is: %i\n", z);
+}

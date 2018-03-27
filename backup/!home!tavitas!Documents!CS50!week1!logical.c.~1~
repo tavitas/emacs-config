@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void) {
+  char c = get_char();
+  if (c == 'c'){
+    printf("yes\n");
+  } else if (c == 'n'){
+    printf("no\n");
+  } else {
+    printf("error\n");
+  }
+}

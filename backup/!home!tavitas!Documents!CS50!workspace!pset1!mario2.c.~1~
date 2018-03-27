@@ -1,0 +1,35 @@
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void) {
+  int height;
+
+  //prompt user for valid pyramid height
+  do {
+    printf("Height: ");
+    height = get_int();
+  } while (height > 23 || height < 0);
+
+  //initialize default spaces and hashes
+  int hashes = 2;
+  int spaces = height - 1;
+
+  //iterate and build each line of the pyramid
+  while (height > 0) {
+    //print spaces
+    for (int i = 0; i < spaces; i++) {
+      printf(" ");
+    }
+    spaces--;
+
+    //print hashtags
+    for (int i = 0; i < hashes; i++) {
+      printf("#");
+    }
+    hashes++;
+
+    printf("\n");
+    height--;
+  }
+}
+

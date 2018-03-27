@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void) {
+
+  //prompt user for x value
+  printf("Enter x value: ");
+  int x = get_int();
+
+  //prompt user for y value
+  printf("Enter y value: ");
+  int y = get_int();
+
+  //print out value for x + y
+  printf("x is %i, y is %i, and x + y is %i \n", x, y, x+y);
+
+  //perform calculations for user
+  printf("%i plus %i is %i\n", x, y, x + y);
+  printf("%i minus %i is %i\n", x, y, x - y);
+  printf("%i plus %i multiply by %i\n", x, y, x * y);
+	
+}

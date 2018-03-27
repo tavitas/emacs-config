@@ -1,0 +1,18 @@
+namespace Drupal\mis_servicedesk;
+
+use GuzzleHttp\Client;
+
+class ClientFactory {
+	/**
+	* Return a configured Client object
+	*/
+	public function get() {
+		$config = [
+		  'base_uri' => 'http://servicedesk:8080',
+    ];
+
+    $client = new Client($config);
+
+    return $client;
+	}
+}

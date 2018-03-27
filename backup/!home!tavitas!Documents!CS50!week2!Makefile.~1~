@@ -1,0 +1,5 @@
+clean:
+	rm buggy0.c buggy1.c
+
+all:
+	gcc -Wall -g buggy1.c -l cs50 -o buggy1

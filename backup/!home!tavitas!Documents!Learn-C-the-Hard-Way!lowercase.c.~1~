@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(int argc, char *argv[]) {
+	int i = 0;
+
+	//iterate through each string in argv
+	for (int i = 1; i < argc; i++) {
+		printf("arg %d: %s\n", i, argv[i]);
+	}
+
+	//lets make our own array of strings
+	char *states[] = {
+		"California", "Oregon",
+		"Washington", "Texas"
+	};
+
+	int state_count = 4;
+
+	for (int i = 0; i < state_count; i++) {
+		printf("state %d: %s\n", i, states[i]);
+	}
+
+	return 0;
+}
